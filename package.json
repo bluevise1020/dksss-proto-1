@@ -1,0 +1,43 @@
+{
+  "name": "dksss-proto-1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "typecheck": "nuxt typecheck",
+    "prettier": "prettier --check --ignore-path .gitignore '**/*.{json,js,mjs,cjs,ts,vue}'",
+    "eslint": "eslint --ext .js,.cjs,.mjs,.ts,.vue --ignore-path .gitignore .",
+    "lint": "run-s prettier eslint",
+    "lintfix": "run-s 'prettier --write' 'eslint --fix'",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^2.10.0",
+    "@nuxtjs/google-fonts": "^3.0.2",
+    "@pdfme/common": "^3.0.1",
+    "@pdfme/generator": "^3.0.1",
+    "@pdfme/schemas": "^3.0.1",
+    "@pinia/nuxt": "^0.5.1"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxtjs/eslint-module": "^4.1.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "dayjs-nuxt": "^2.1.9",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "microcms-js-sdk": "^2.7.0",
+    "netlify-cli": "^17.5.1",
+    "npm-run-all": "^4.1.5",
+    "nuxt": "^3.7.4",
+    "prettier": "^3.0.3",
+    "sass": "^1.69.5",
+    "typescript": "^5.2.2",
+    "vue-tsc": "^1.8.22"
+  }
+}
